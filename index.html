@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shaheed | IT &amp; AI Tools Trainer</title>
+  <meta name="description" content="Portfolio of Shaheed: IT Skills Trainer, AI Tools Trainer and aspiring software developer.">
+  <meta name="theme-color" content="#080A12">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23080A12'/%3E%3Ctext x='32' y='42' font-size='28' font-family='Arial' font-weight='700' text-anchor='middle' fill='%2300E5FF'%3ESMS%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Branded loader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__mark">SMS</div>
+      <div class="loader__bar"><span></span></div>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="beams" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="brand" aria-label="Shaheed - home">
+        <span class="brand__mark">SMS</span><span class="brand__name">Shaheed</span>
+      </a>
+      <nav class="menu" id="menu" aria-label="Primary">
+        <ul>
+          <li><a href="#home" class="menu__link">Home</a></li>
+          <li><a href="#about" class="menu__link">About</a></li>
+          <li><a href="#skills" class="menu__link">Skills</a></li>
+          <li><a href="#services" class="menu__link">Training</a></li>
+          <li><a href="#projects" class="menu__link">Projects</a></li>
+          <li><a href="#contact" class="menu__link">Contact</a></li>
+        </ul>
+        <span class="menu__underline" id="menuUnderline"></span>
+      </nav>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow reveal-load" style="--d:.1s"><span class="dot"></span> Available for training &amp; collaboration</p>
+          <h1 class="hero__name" id="heroName" aria-label="Shaheed">
+            <span class="line"><span class="word grad">Shaheed</span></span>
+          </h1>
+          <p class="hero__role reveal-load" style="--d:.9s">
+            <span class="role-prefix">I'm an</span>
+            <span class="typed" id="typed" aria-live="off"></span><span class="caret" aria-hidden="true"></span>
+          </p>
+          <p class="hero__intro reveal-load" style="--d:1.1s">
+            I help individuals, schools and organisations build practical digital confidence, from everyday IT skills
+            to the responsible use of AI tools, while growing as a software developer who turns ideas into working products.
+          </p>
+          <div class="hero__cta reveal-load" style="--d:1.3s">
+            <a href="#projects" class="btn btn--primary magnetic"><span>View my work</span><i class="arrow" aria-hidden="true">→</i></a>
+            <a href="#contact" class="btn btn--ghost magnetic"><span>Let's talk</span><i class="arrow" aria-hidden="true">→</i></a>
+          </div>
+          <ul class="hero__stats reveal-load" style="--d:1.5s">
+            <li><strong data-count="50" data-suffix="">0</strong><span>Students trained</span></li>
+            <li><strong data-count="10" data-suffix="">0</strong><span>Workshops delivered</span></li>
+            <li><strong data-count="4" data-suffix="">0</strong><span>Core tech domains</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal-load" style="--d:.6s">
+          <div class="avatar tilt" data-tilt="10">
+            <div class="avatar__glow"></div>
+            <div class="avatar__ring"></div>
+            <div class="avatar__ring avatar__ring--2"></div>
+            <div class="avatar__frame">
+              <img src="images/profile.jpg" alt="Portrait of Shaheed holding a laptop" width="720" height="720">
+            </div>
+            <div class="chip chip--1">&lt;/&gt; Code</div>
+            <div class="chip chip--2">AI Tools</div>
+            <div class="chip chip--3">Training</div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About"><span></span></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__art reveal" data-reveal="left">
+          <div class="photo-stack">
+            <figure class="photo photo--main tilt" data-tilt="6">
+              <img src="images/training.jpg" alt="A learner concentrating on a laptop during a hands-on computer class" loading="lazy" width="1400" height="933">
+            </figure>
+            <figure class="photo photo--small tilt" data-tilt="8">
+              <img src="images/lab.jpg" alt="A bright computer lab with rows of desktop computers" loading="lazy" width="933" height="1400">
+            </figure>
+            <span class="photo-badge">Hands-on training</span>
+          </div>
+        </div>
+        <div class="about__text">
+          <p class="section__tag reveal">// About me</p>
+          <h2 class="section__title reveal">Technology, taught with <span class="grad">clarity</span>.</h2>
+          <p class="reveal">I am an IT skills trainer and AI tools trainer with a strong interest in software development. My work focuses on making technology understandable and useful: teaching digital literacy, productivity tools and the responsible, effective use of modern AI.</p>
+          <p class="reveal">I believe good training is practical, patient and measurable. Every session I design is built around real tasks learners can apply immediately in study, work and business.</p>
+          <ul class="about__facts reveal">
+            <li><span>Location</span> Kampala, Uganda</li>
+            <li><span>Focus</span> IT training, AI tools, web development</li>
+            <li><span>Languages</span> English, Luganda</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary magnetic reveal"><span>Work with me</span><i class="arrow" aria-hidden="true">→</i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <p class="section__tag reveal">// Skills</p>
+          <h2 class="section__title reveal">Capabilities that <span class="grad">compound</span></h2>
+        </div>
+        <div class="skills">
+          <article class="card glass tilt reveal" data-tilt="6">
+            <h3>Training &amp; Facilitation</h3>
+            <div class="skill"><div class="skill__row"><span>IT skills training</span><b>95%</b></div><div class="bar"><i style="--v:95%"></i></div></div>
+            <div class="skill"><div class="skill__row"><span>AI tools training</span><b>92%</b></div><div class="bar"><i style="--v:92%"></i></div></div>
+            <div class="skill"><div class="skill__row"><span>Curriculum design</span><b>88%</b></div><div class="bar"><i style="--v:88%"></i></div></div>
+          </article>
+          <article class="card glass tilt reveal" data-tilt="6">
+            <h3>Development</h3>
+            <div class="skill"><div class="skill__row"><span>HTML &amp; CSS</span><b>90%</b></div><div class="bar"><i style="--v:90%"></i></div></div>
+            <div class="skill"><div class="skill__row"><span>JavaScript</span><b>78%</b></div><div class="bar"><i style="--v:78%"></i></div></div>
+            <div class="skill"><div class="skill__row"><span>Python</span><b>70%</b></div><div class="bar"><i style="--v:70%"></i></div></div>
+          </article>
+          <article class="card glass tilt reveal" data-tilt="6">
+            <h3>Productivity &amp; Digital</h3>
+            <div class="skill"><div class="skill__row"><span>Office suites &amp; documents</span><b>96%</b></div><div class="bar"><i style="--v:96%"></i></div></div>
+            <div class="skill"><div class="skill__row"><span>Prompt engineering</span><b>90%</b></div><div class="bar"><i style="--v:90%"></i></div></div>
+            <div class="skill"><div class="skill__row"><span>Digital safety &amp; ethics</span><b>85%</b></div><div class="bar"><i style="--v:85%"></i></div></div>
+          </article>
+        </div>
+        <ul class="tags reveal" aria-label="Technologies">
+          <li>Microsoft Office</li><li>Google Workspace</li><li>ChatGPT</li><li>Claude</li><li>Gemini</li><li>Git &amp; GitHub</li><li>Responsive design</li><li>Canva</li><li>Data basics</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <p class="section__tag reveal">// Training</p>
+          <h2 class="section__title reveal">What I <span class="grad">teach</span></h2>
+        </div>
+        <div class="services">
+          <article class="card glass spot reveal">
+            <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div>
+            <h3>IT Skills Training</h3>
+            <p>Computer fundamentals, office productivity, internet safety and digital workflows for beginners and professionals.</p>
+          </article>
+          <article class="card glass spot reveal">
+            <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></div>
+            <h3>AI Tools Training</h3>
+            <p>Hands-on use of AI assistants for research, writing, teaching and business, with prompting skills and responsible-use guidance.</p>
+          </article>
+          <article class="card glass spot reveal">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/></svg></div>
+            <h3>Web &amp; Coding Basics</h3>
+            <p>Introductory HTML, CSS, JavaScript and Python through small projects that build confidence step by step.</p>
+          </article>
+          <article class="card glass spot reveal">
+            <div class="icon"><svg viewBox="0 0 24 24"><path d="M3 20h18M6 16V9M12 16V4M18 16v-5"/></svg></div>
+            <h3>Organisational Workshops</h3>
+            <p>Customised sessions for schools, NGOs and teams who want to upskill staff and adopt technology with purpose.</p>
+          </article>
+        </div>
+
+        <div class="gallery" id="gallery">
+          <figure class="reveal g-wide"><button type="button" class="g-open" data-src="images/learners-pair.jpg" data-cap="Learning side by side" aria-label="Enlarge photo: Learning side by side"><img src="images/learners-pair.jpg" alt="Two learners working through a task together on a laptop" loading="lazy"></button><figcaption>Learning side by side</figcaption></figure>
+          <figure class="reveal g-tall"><button type="button" class="g-open" data-src="images/learner-desk.jpg" data-cap="Focused practice" aria-label="Enlarge photo: Focused practice"><img src="images/learner-desk.jpg" alt="A learner at a desktop computer in a bright classroom" loading="lazy"></button><figcaption>Focused practice</figcaption></figure>
+          <figure class="reveal g-tall"><button type="button" class="g-open" data-src="images/learners-laptop.jpg" data-cap="Guided hands-on work" aria-label="Enlarge photo: Guided hands-on work"><img src="images/learners-laptop.jpg" alt="Learners sharing a laptop in a training session" loading="lazy"></button><figcaption>Guided hands-on work</figcaption></figure>
+          <figure class="reveal g-wide"><button type="button" class="g-open" data-src="images/training.jpg" data-cap="Learning by doing" aria-label="Enlarge photo: Learning by doing"><img src="images/training.jpg" alt="A learner concentrating on a laptop" loading="lazy"></button><figcaption>Learning by doing</figcaption></figure>
+          <figure class="reveal g-tall"><button type="button" class="g-open" data-src="images/lab-red.jpg" data-cap="The training lab" aria-label="Enlarge photo: The training lab"><img src="images/lab-red.jpg" alt="Rows of desktop computers in a training lab" loading="lazy"></button><figcaption>The training lab</figcaption></figure>
+          <figure class="reveal g-wide"><button type="button" class="g-open" data-src="images/lab.jpg" data-cap="Ready for the next class" aria-label="Enlarge photo: Ready for the next class"><img src="images/lab.jpg" alt="A computer lab by a large window" loading="lazy"></button><figcaption>Ready for the next class</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <p class="section__tag reveal">// Projects</p>
+          <h2 class="section__title reveal">Selected <span class="grad">work</span></h2>
+        </div>
+        <div class="filters reveal" role="tablist" aria-label="Project categories">
+          <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter" data-filter="training" role="tab" aria-selected="false">Training</button>
+          <button class="filter" data-filter="web" role="tab" aria-selected="false">Web</button>
+          <button class="filter" data-filter="ai" role="tab" aria-selected="false">AI</button>
+        </div>
+        <div class="projects" id="projectGrid">
+          <article class="project tilt" data-cat="training" data-tilt="7" tabindex="0">
+            <div class="project__media project__media--fit"><img src="images/digital-literacy.jpg" alt="Digital literacy skills diagram" loading="lazy"></div>
+            <div class="project__body">
+              <span class="project__cat">Training</span>
+              <h3>Digital Literacy Programme</h3>
+              <div class="project__reveal"><p>A structured course taking complete beginners to confident daily computer users, with assessments and certificates.</p><a href="#contact" class="link">Discuss a similar programme <i class="arrow">→</i></a></div>
+            </div>
+          </article>
+          <article class="project tilt" data-cat="ai" data-tilt="7" tabindex="0">
+            <div class="project__media"><img src="images/online-tutor.jpg" alt="Online tutoring session on a laptop" loading="lazy"></div>
+            <div class="project__body">
+              <span class="project__cat">AI</span>
+              <h3>AI Tools for Educators</h3>
+              <div class="project__reveal"><p>A practical workshop series on using AI assistants for lesson planning, assessment and research, with ethics built in.</p><a href="#contact" class="link">Book a workshop <i class="arrow">→</i></a></div>
+            </div>
+          </article>
+          <article class="project tilt" data-cat="web" data-tilt="7" tabindex="0">
+            <div class="project__media"><img src="images/code-screen.jpg" alt="HTML code on a screen" loading="lazy"></div>
+            <div class="project__body">
+              <span class="project__cat">Web</span>
+              <h3>Responsive Portfolio Platform</h3>
+              <div class="project__reveal"><p>A fast, accessible personal-brand website with motion design, built with plain HTML, CSS and JavaScript.</p><a href="#home" class="link">Back to top <i class="arrow">→</i></a></div>
+            </div>
+          </article>
+          <article class="project tilt" data-cat="training" data-tilt="7" tabindex="0">
+            <div class="project__media project__media--fit"><img src="images/ms-office.jpg" alt="Microsoft Office apps: PowerPoint, Word and Excel" loading="lazy"></div>
+            <div class="project__body">
+              <span class="project__cat">Training</span>
+              <h3>Office Productivity Bootcamp</h3>
+              <div class="project__reveal"><p>Intensive hands-on training in documents, spreadsheets and presentations for students and working professionals.</p><a href="#contact" class="link">Enquire <i class="arrow">→</i></a></div>
+            </div>
+          </article>
+          <article class="project tilt" data-cat="ai" data-tilt="7" tabindex="0">
+            <div class="project__media"><img src="images/digital-skills.jpg" alt="Digital skills illustration with popular apps on a monitor" loading="lazy"></div>
+            <div class="project__body">
+              <span class="project__cat">AI</span>
+              <h3>Prompt Engineering Guide</h3>
+              <div class="project__reveal"><p>A practical learner guide with reusable prompt frameworks for writing, analysis and everyday productivity.</p><a href="#contact" class="link">Request the guide <i class="arrow">→</i></a></div>
+            </div>
+          </article>
+          <article class="project tilt" data-cat="web" data-tilt="7" tabindex="0">
+            <div class="project__media"><svg viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="g6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8B5CF6"/><stop offset="1" stop-color="#3B82F6"/></linearGradient></defs><rect width="400" height="240" fill="#101426"/><g fill="none" stroke="url(#g6)" stroke-width="2"><rect x="100" y="60" width="200" height="120" rx="8"/><path d="M100 90h200"/><circle cx="116" cy="75" r="3"/><circle cx="130" cy="75" r="3"/></g></svg></div>
+            <div class="project__body">
+              <span class="project__cat">Web</span>
+              <h3>Learning Dashboard Prototype</h3>
+              <div class="project__reveal"><p>A prototype dashboard that tracks learner progress and attendance, built to explore front-end application design.</p><a href="#contact" class="link">Learn more <i class="arrow">→</i></a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container contact">
+        <div class="contact__text">
+          <p class="section__tag reveal">// Contact</p>
+          <h2 class="section__title reveal">Let's build something <span class="grad">useful</span>.</h2>
+          <p class="reveal">Need a trainer for your team, a workshop on AI tools, or a collaborator on a web project? Send a message and I will respond promptly.</p>
+          <ul class="contact__list reveal">
+            <li><span>Email</span><a href="mailto:ssemandamuhammad004@gmail.com">ssemandamuhammad004@gmail.com</a></li>
+            <li><span>Phone</span><a href="tel:+256749362303">0749 362 303</a></li>
+            <li><span>Base</span>Kampala, Uganda</li>
+          </ul>
+        </div>
+        <form class="form glass reveal" id="contactForm" novalidate>
+          <label>Name<input type="text" name="name" required autocomplete="name"></label>
+          <label>Email<input type="email" name="email" required autocomplete="email"></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button type="submit" class="btn btn--primary magnetic"><span>Send message</span><i class="arrow" aria-hidden="true">→</i></button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Shaheed. All rights reserved.</p>
+      <a href="#home" class="link">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button type="button" class="lightbox__close" id="lbClose" aria-label="Close photo">×</button>
+    <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
